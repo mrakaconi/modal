@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  align-content: center;
+  position: absolute;
+  margin: 100px auto;
+}
+
+#pe {
+ margin: 100px;
+}
+
+#klik {
+  
+  background: blue;
+  color: white;
+  border-radius: 30%;
+  width: 100px;
+  height: 40px;
+  position: relative;
+  left: 50%;
+}
+
+.modal1 {
+  width: 500px;
+  height: 300px;
+  padding: 50px;
+  background-color: rgb(145, 18, 18);
+  color: white;
+  margin: 100px auto;
+  position: relative;
+  z-index: 1;
+}
+
+#zatvori {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: rgb(182, 175, 175);
+  color: rgb(243, 243, 245);
+  font-weight: 700;
+}
+
+.modal1 p {
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  margin: 50px auto;
+  color: white;
+
+}
+
+.zatamnjena {
+  width: 100vw;
+  height: 100hw;
+  background-color: white;
+  color: black;
+  align-content: center;
+  position: absolute;
+  opacity: 0.3;
+}
+
+.modal2 {
+  display: none;
+  width: 500px;
+  height: 300px;
+  padding: 50px;
+  background-color: rgb(145, 18, 18);
+  color: white;
+  margin: 100px auto;
+  position: relative;
+  z-index: 1;
+
+}

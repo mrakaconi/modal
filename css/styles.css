@@ -24,7 +24,7 @@ input {
 #dugme {
     margin-top: 20px;
 }
-.o-izvodjacu {
+.o-izvodjacu .overlay {
     border: 1px solid black;
     height: 500px;
     width: 550px;
@@ -33,6 +33,7 @@ input {
 }
 div.col-md-6 {
     text-align: center;
+    align-content: center;
 }
 #readmore {
     display: none;
@@ -43,6 +44,75 @@ div.col-md-6 {
 #slika {
     margin-top: 15px;
 }
-@media (min-width: 600px) {
-    background-size: 120%;
-}
+
+/* .overlay {
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    align-content: center;
+    position: absolute;
+    margin: 100px auto;
+  } */
+  
+  #readmore {
+    
+    color: white;
+    /* width: 100px;
+    height: 40px; */
+    position: relative;
+    left: 40%;
+  }
+  
+  .modal1 {
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+    background-color: rgb(145, 18, 18);
+    color: white;
+    margin: 100px auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #zatvori {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: rgb(182, 175, 175);
+    color: rgb(243, 243, 245);
+    font-weight: 700;
+  }
+  
+  .modal1 {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    margin: 50px auto;
+    color: white;
+  
+  }
+  
+  .zatamnjena {
+    width: 100vw;
+    height: 100hw;
+    background-color: white;
+    color: black;
+    align-content: center;
+    position: absolute;
+    opacity: 0.3;
+  }
+  
+  .modal2 {
+    display: none;
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+    background-color: rgb(145, 18, 18);
+    color: white;
+    margin: 100px auto;
+    position: relative;
+    z-index: 1;
+  
+  }

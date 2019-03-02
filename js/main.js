@@ -1,3 +1,4 @@
+$(document).ready(function() {
 
 const naslovPesme = document.getElementById("naslov-pesme")
 const tekstPesme = document.getElementById("tekst-pesme")
@@ -21,7 +22,7 @@ function ucitajPodatke() {
     const url1 = `https://en.wikipedia.org/w/api.php?action=query&titles=${izvodjac}&prop=extracts|pageimages|info&pithumbsize=400&inprop=url&redirects=&format=json&origin=*`
 
     fetch(url1)
-        .then(response => response.json())    
+        .then(response => response.json())
         .then(podatak => {
             const pages = podatak.query.pages;
             const clanak = Object.values(pages)[0];
@@ -40,3 +41,13 @@ forma.addEventListener('submit', function (e) {
     readmorehref.setAttribute('href', `https://en.wikipedia.org/wiki/${trazeniIzvodjac.value}`);
     ucitajPodatke();
 });
+
+$('#klik').on('click', function () {
+    $('#ajdi1').removeClass('overlay').addClass('zatamnjena');
+    $('#ajdi2').removeClass('modal2').addClass('modal1');
+})
+$('#zatvori').on('click', function () {
+    $('#ajdi1').removeClass('zatamnjena').addClass('overlay');
+    $('#ajdi2').removeClass('modal1').addClass('modal2');
+})
+})
